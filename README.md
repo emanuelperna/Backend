@@ -125,6 +125,9 @@ RESPUESTA AL USUARIO
 
 ---
 
-## 📄 Licencia
+## 📄 Licencia ®
 
 Este repositorio es de uso educativo. Contenido del **Curso Backend PHP 2026**.
+
+---
+
