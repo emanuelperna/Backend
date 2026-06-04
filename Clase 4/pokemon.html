@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Pokémon</title>
+</head>
+<body>
+  <h1>Primeros 151 Pokémon</h1>
+  <ol id='lista-pokemon'></ol>
+
+  <script>
+    async function cargarPokemon() {
+      const respuesta = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+      const datos = await respuesta.json();
+      const lista = document.getElementById('lista-pokemon');
+
+      datos.results.forEach((pokemon) => {
+        const item = document.createElement('li');
+        item.textContent = pokemon.name;
+        lista.appendChild(item);
+      });
+    }
+
+    cargarPokemon();
+  </script>
+</body>
+</html>
