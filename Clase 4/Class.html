@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar etiqueta por ID</title>
+</head>
+<body>
+    <p id="liberame" class="parrafoBonito">
+        Este esta atrapado!
+    </p>
+    <p "class="parrafoBonito">
+        Este esta atrapado
+    </p>
+    <p>
+        Este esta atrapado
+    </p>
+    <script>
+        //quiero liberar el primero..
+        //como accedo al primero?
+        //como cambio el contenido?
+        //quiero poner una alerta de que se libero..
+        let parrafo = document.getElementById("liberame");
+        parrafo.innerHTML = "Estoy libre!"; 
+        alert("El parrafo se libero");
+    </script>
+</body>
+</html
